@@ -1,0 +1,290 @@
+:root {
+--borderstyle: 1px solid black;
+--black:  black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+header, nav ul, #about, #portfolio, footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Typography */
+
+h2 {
+    text-transform: uppercase;
+    font-size: 150px;
+
+}
+
+h3 {
+    font-size: 45px;
+}
+
+/* General Styling  */
+
+header {
+    align-items: center;
+    border-bottom: var(--borderstyle);
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding: 30px 40px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+}
+
+footer {
+    font-size: 22px;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+#about, #portfolio, footer {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* Navigation*/
+
+.logo {
+    font-size: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.menu {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.menu:hover{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--black);
+}
+
+/* About Me*/
+
+#about {
+    column-gap: 60px;
+}
+
+.mydescription {
+   
+   flex: 2 0 350px;
+}
+
+#mystory {
+   line-height: 1.5;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   font-size: 22px;
+}
+
+.myphoto img{
+width: 100%;
+}
+
+.myphoto{
+    width: 30%;
+    height: 30%;
+    /* flex: 1 0 400px;  */
+    margin-bottom: 40px;
+}
+
+/* Portfolio container */
+
+#portfolio { 
+    border-top: var(--borderstyle); 
+    padding-top: 40px;
+    flex-direction: column;
+}
+
+/* Portfolio Items */
+
+#portfolio > h2 {
+    margin-bottom: 50px;
+}
+
+.description > p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.description {
+    padding-right: 20px;
+}
+
+.big {
+    flex: 2 0 0; 
+    flex-wrap: wrap-reverse;
+    
+}
+
+.big .description {
+    /* flex: 1 0 0; */
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.bigimg {
+    width: 100%;
+}
+
+.big a {
+    flex: 2 0 0; 
+    width: 65%;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+#portfolio + .big {
+    border-top: var(--borderstyle); 
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.small {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    /* width: 50%; */
+    padding-bottom: 40px;
+}
+
+.small:first-of-type {
+    border-right: var(--borderstyle);
+    padding-right: 40px;
+}
+
+.small:nth-child(2){
+    padding-left: 40px; 
+}
+
+.smallimg {
+    width: 100%;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.small, .big {
+    border-bottom: var(--borderstyle);
+    display: flex;
+}
+
+#portfolio img {
+    transition: 1s ease;
+}
+
+#portfolio img:hover {
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+/* Work Items Button*/
+.description button {
+    padding: 15px;
+    border-radius: 999em;
+    cursor: pointer;
+    border: var(--borderstyle);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.description button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Contact*/
+
+#contact ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact li {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#contact li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body{
+       max-width: 1400px;
+       margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 80px;
+    }
+
+    .row, header, nav ul, footer ul {
+        flex-direction: column;
+    }
+
+    header, nav ul{
+        justify-content: center;
+    }
+
+   footer ul, nav ul {
+    align-items: center;
+   }
+
+   nav ul li {
+    margin-bottom: 10px;
+   }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .small:first-of-type {
+        border-right: none;
+        padding-right: 0px;
+    }
+    
+    .small:nth-child(2){
+        padding-left: 0px; 
+    }
+
+    #portfolio h2, footer h2 {
+        text-align: center;
+    }
+
+}
