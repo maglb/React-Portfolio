@@ -3,7 +3,7 @@ export default function ResumePage() {
   return (
     <section id="resume">
       <div className="mydescription">
-        <h2>Hi,</h2>
+        <h2>Resumee</h2>
         <p id="mystory">
           My name is Magali and I’m a graphic designer who’s currently studying
           coding. I have a passion for typography and I enjoy helping brands
