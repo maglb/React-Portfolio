@@ -222,9 +222,29 @@ footer {
 }
 
 /* Contact Form*/
+#exampleFormControlTextarea1 {
+  height: 240px;
+}
+
+form {
+  margin-top: 10%;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .submit {
   margin-top: 2%;
+}
+
+.form-control {
+  border: var(--borderstyle);
+}
+
+.form-group {
+  margin-bottom: 2%;
 }
 
 @media screen and (min-width: 768px) {
