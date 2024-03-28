@@ -28,6 +28,18 @@ h3 {
   font-size: 45px;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+  border-bottom: var(--borderstyle);
+}
+
+h5 {
+  font-size: 22px;
+}
+
 /* General Styling  */
 
 .header {
@@ -85,7 +97,6 @@ footer {
 
 #about {
   column-gap: 60px;
-  margin-top: 10%;
 }
 
 .mydescription {
@@ -146,10 +157,6 @@ footer {
   padding-bottom: 40px;
 }
 
-.bigimg {
-  width: 100%;
-}
-
 .big a {
   flex: 2 0 0;
   width: 65%;
@@ -164,39 +171,11 @@ footer {
   /* justify-content: space-between; */
 }
 
-.small {
-  flex: 1 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  padding-bottom: 40px;
-}
-
-.small:first-of-type {
-  border-right: var(--borderstyle);
-  padding-right: 40px;
-}
-
-.small:nth-child(2) {
-  padding-left: 40px;
-}
-
-.smallimg {
-  width: 100%;
-  cursor: pointer;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.small,
-.big {
-  border-bottom: var(--borderstyle);
-  display: flex;
-}
-
 #portfolio img {
   height: 30%;
   transition: 1s ease;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 #portfolio img:hover {
@@ -214,14 +193,33 @@ footer {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+  margin-right: 15px;
 }
 
 .btn:hover {
   background-color: black;
   color: white;
 }
+/* Resumee Page */
 
-/* Contact Form*/
+.skills {
+  margin-bottom: 10%;
+}
+.location {
+  font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Contact Form */
 #exampleFormControlTextarea1 {
   height: 240px;
 }
