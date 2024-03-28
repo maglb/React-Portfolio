@@ -2,11 +2,9 @@ import { useState } from "react";
 // import './style.css';
 
 function Form() {
-
   return (
-
-    <form className="row justify-content-md-center col-9">
-      <div className="form-group">
+    <form className="row justify-content-md-center">
+      <div className="form-group col-9">
         <label for="exampleInputEmail1">Name</label>
         <input
           type="text"
@@ -17,7 +15,7 @@ function Form() {
           required
         />
       </div>
-      <div className="form-group">
+      <div className="form-group col-9">
         <label for="exampleInputPassword1">Email</label>
         <input
           type="email"
@@ -27,7 +25,7 @@ function Form() {
           required
         />
       </div>
-      <div className="form-group">
+      <div className="form-group col-9">
         <label for="exampleFormControlTextarea1">Message</label>
         <textarea
           className="form-control"
@@ -37,7 +35,7 @@ function Form() {
           required
         ></textarea>
       </div>
-      <button type="submit" className="btn submit">
+      <button type="submit" className="btn submit col-9">
         Submit
       </button>
     </form>
