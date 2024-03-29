@@ -1,4 +1,5 @@
 import "../style.css";
+import myPhoto from "../assets/myphoto.jpg";
 
 export default function AboutPage() {
   return (
@@ -14,7 +15,7 @@ export default function AboutPage() {
         </p>
       </div>
       <div className="myphoto">
-        <img src="../src/assets/myphoto.jpg" alt=""></img>
+        <img src={myPhoto} alt=""></img>
       </div>
     </section>
   );
