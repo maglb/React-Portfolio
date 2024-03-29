@@ -55,6 +55,6 @@ In order to complete this assignment, I have referred to a few resources:
 
 # Deployed
 
-https://the-green-hill-ecommerce-admin-b26231d8324c.herokuapp.com/
+https://jazzy-dragon-a5f1aa.netlify.app/
 
 
