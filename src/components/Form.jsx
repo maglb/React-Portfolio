@@ -1,6 +1,3 @@
-import { useState } from "react";
-// import './style.css';
-
 function Form() {
   return (
     <form className="row justify-content-md-center">
