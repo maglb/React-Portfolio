@@ -5,11 +5,7 @@ export default function Project(props) {
         <div class="card-body">
           <h3 class="card-title">{props.title}</h3>
           <p class="card-text description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna
-            enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo.
-            Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue
-            nec, rhoncus magna. Sed cursus eu justo id venenatis.
+            {props.description}
           </p>
           <a class="btn" target="_blank" href={props.app} role="button">
             See Application
