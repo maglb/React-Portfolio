@@ -83,6 +83,15 @@ footer {
   cursor: pointer;
 }
 
+.linkactive {
+  text-decoration: underline;
+    font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
 .menu {
   margin-left: 30px;
   cursor: pointer;
@@ -243,6 +252,20 @@ label {
 
 .form-group {
   margin-bottom: 2%;
+}
+
+.fa {
+  font-size: 36px;
+  color: black;
+}
+
+.icon {
+  margin: 2%;
+}
+
+footer {
+  border-top: var(--borderstyle);
+  padding-top: 3%;
 }
 
 @media screen and (min-width: 768px) {
