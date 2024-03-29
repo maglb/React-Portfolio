@@ -1,3 +1,4 @@
+import resumeImage from "../assets/resume.jpg";
 
 export default function ResumePage() {
   return (
@@ -57,7 +58,7 @@ export default function ResumePage() {
         </div>
       </div>
       <div className="myphoto d-flex ">
-        <img src="../src/assets/resume.jpg" alt=""></img>
+        <img src={resumeImage} alt=""></img>
       </div>
     </section>
   );
