@@ -1,5 +1,5 @@
 import Project from "./Project";
-import fistsOfForecast from "../assets/FistsofForecast.png";
+import CSP from "../assets/CSP_Web.png";
 import greenHill from "../assets/GreenHill.png";
 import codeQuiz from "../assets/CodeQuiz.png";
 import workDay from "../assets/WorkDay.png";
@@ -9,11 +9,11 @@ import weatherDash from "../assets/weatherDash.png";
 const projects = [
   {
     id: 1,
-    title: "Fists of Forecast",
+    title: "Clear Strategy Partners, PR agency Website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
-    image: fistsOfForecast,
-    app: "https://verred01.github.io/Fists-of-Forecast/",
+    image: CSP,
+    app: "https://cspfirm.com/",
     github: "https://github.com/Verred01/Fists-of-Forecast",
   },
   {
@@ -74,7 +74,7 @@ export default function Portfolio() {
           description={project.description}
           image={project.image}
           app={project.app}
-          github={project.github}
+          // github={project.github}
         />
       ))}
     </div>
