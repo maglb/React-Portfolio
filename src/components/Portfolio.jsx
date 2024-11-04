@@ -33,7 +33,7 @@ const projects = [
     description:
       "The Green Hill is a small family-owned business in Utah that offers fresh eggs and honey produced right in their backyard. To support their operations, We built and admin portal application that enables them to easily add, update, and delete products. This solution streamlines their inventory process, helping them focus more on their craft and less on administrative tasks.",
     image: greenHill,
-    app: "https://the-green-hill-ecommerce-admin-b26231d8324c.herokuapp.com/",
+    app: "https://green-hill-admin-74f9dc2e80e5.herokuapp.com/",
     technology:
       "Node.js, Express.js, Handlebars.js, MySQL and the Sequelize ORM for the database, Bulma as CSS framework.",
   },
