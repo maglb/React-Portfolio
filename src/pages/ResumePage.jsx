@@ -3,7 +3,7 @@ import resumeImage from "../assets/resume.jpg";
 export default function ResumePage() {
   return (
     <section id="about">
-      <div className="mydescription d-flex flex-column">
+      <div className="mydescription">
         <h2>Resume</h2>
 
         <div id="mystory" className="col">
