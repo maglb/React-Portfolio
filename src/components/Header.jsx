@@ -8,9 +8,8 @@ const currentPage = useLocation().pathname;
   return (
     <header className="navbar navbar-expand-lg header">
       <div className="container-fluid">
-       
-          <h1 id="logo">Magali Lebon</h1>
-       
+        <h1 id="logo">Magali Lebon</h1>
+
         <div
           className="justify-content-end collapse navbar-collapse"
           id="navbarSupportedContent"
@@ -18,17 +17,6 @@ const currentPage = useLocation().pathname;
           <Nav
             className="header"
             links={[
-              <Link
-                key={1}
-                className={
-                  currentPage === "/about"
-                    ? "nav-link active linkactive"
-                    : "nav-link link"
-                }
-                to="/about"
-              >
-                About Me
-              </Link>,
               <Link
                 key={2}
                 className={
@@ -40,28 +28,20 @@ const currentPage = useLocation().pathname;
               >
                 Portfolio
               </Link>,
-              <Link
-                key={3}
-                className={
-                  currentPage === "/contact"
-                    ? "nav-link active linkactive"
-                    : "nav-link link"
-                }
-                to="/contact"
+              <a
+                className="icon"
+                href="https://github.com/maglb"
+                target="_blank"
               >
-                Contact
-              </Link>,
-              <Link
-                key={4}
-                className={
-                  currentPage === "/resume"
-                    ? "nav-link active linkactive"
-                    : "nav-link link"
-                }
-                to="/resume"
+                <i className="fa fa-github"></i>
+              </a>,
+              <a
+                className="icon"
+                href="https://www.linkedin.com/in/magali-lebon"
+                target="_blank"
               >
-                Resume
-              </Link>,
+                <i className="fa fa-linkedin-square"></i>
+              </a>,
             ]}
           />
         </div>
