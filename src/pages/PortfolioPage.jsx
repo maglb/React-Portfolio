@@ -1,11 +1,15 @@
 import Portfolio from "../components/Portfolio"
+import AboutPage from "./AboutPage";
 import "../style.css";
 
 export default function PortfolioPage() {
-  return  (
-  <section id="about">
-    <h2>Portfolio</h2>
-   <Portfolio />
-    </section>
-    );
+  return (
+    <>
+      <AboutPage />
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <Portfolio />
+      </section>
+    </>
+  );
 }
