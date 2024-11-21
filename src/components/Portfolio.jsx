@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "The Green Hill",
     description:
-      "The Green Hill is a small family-owned business in Utah that offers fresh eggs and honey produced right in their backyard. To support their operations, We built and admin portal application that enables them to easily add, update, and delete products. This solution streamlines their inventory process, helping them focus more on their craft and less on administrative tasks.",
+      "The Green Hill is a small family-owned business in Utah that offers fresh eggs and honey produced right in their backyard. To support their operations, We built and admin portal application that allows them to easily add, update, and delete products. This solution streamlines their inventory process, helping them focus more on their craft and less on administrative tasks.\n login",
     image: greenHill,
     app: "https://green-hill-admin-74f9dc2e80e5.herokuapp.com/",
     technology:
@@ -41,43 +41,45 @@ const projects = [
     id: 4,
     title: "FeastBook",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
+      "FeastBook is an app designed for food enthusiasts to share, discover, and generate new recipes. It provides a centralized platform where foodies can easily find and organize all their favorite recipes in one place.",
     image: feastBook,
     app: "https://feastbook.onrender.com/",
     github: "https://github.com/maglb/Code-Quiz",
+    technology:
+      "Node.js, Express.js, Handlebars.js, MySQL and the Sequelize ORM for the database, Bulma as CSS framework.",
   },
-  {
-    id: 5,
-    title: "Code Quiz",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
-    image: codeQuiz,
-    app: "https://maglb.github.io/Code-Quiz/",
-    github: "https://github.com/maglb/Code-Quiz",
-  },
-  {
-    id: 6,
-    title: "Password Generator",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
-    image: pwGenerator,
-    app: "https://maglb.github.io/JS-PasswordGenerator/",
-    github: "https://github.com/maglb/JS-PasswordGenerator",
-  },
-  {
-    id: 7,
-    title: "Weather Dashboard",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
-    image: weatherDash,
-    app: "https://maglb.github.io/Weather-Dashboard/",
-    github: "https://github.com/maglb/Weather-Dashboard",
-  },
+  // {
+  //   id: 5,
+  //   title: "Code Quiz",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
+  //   image: codeQuiz,
+  //   app: "https://maglb.github.io/Code-Quiz/",
+  //   github: "https://github.com/maglb/Code-Quiz",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Password Generator",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
+  //   image: pwGenerator,
+  //   app: "https://maglb.github.io/JS-PasswordGenerator/",
+  //   github: "https://github.com/maglb/JS-PasswordGenerator",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Weather Dashboard",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius blandit nisl, hendrerit volutpat erat. Morbi sodales magna enim, in ornare mi vulputate vel. Proin dapibus tincidunt commodo. Sed pellentesque dictum lacinia. Ut a sapien semper, posuere augue nec, rhoncus magna. Sed cursus eu justo id venenatis.",
+  //   image: weatherDash,
+  //   app: "https://maglb.github.io/Weather-Dashboard/",
+  //   github: "https://github.com/maglb/Weather-Dashboard",
+  // },
 ];
 
 export default function Portfolio() {
   return (
-    <div className="container pt-4">
+    <div className="projects-container">
       {projects.map((project) => (
         <Project
           key={project.id}
