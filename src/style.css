@@ -3,10 +3,13 @@
   --black: black;
 }
 
-*, body {
+
+body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
+  max-width: 100% !important;
+  overflow-x: hidden;
 }
 
 /* Responsiveness */
@@ -42,12 +45,18 @@ h5 {
   font-size: 22px;
 }
 
+footer p {
+  font-weight: bold;
+padding-top: 35px;
+text-align: center;
+}
+
 /* General Styling  */
 
 .header {
   align-items: center;
   border-bottom: var(--borderstyle);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   justify-content: space-between;
   padding: 30px 40px;
   position: sticky;
@@ -59,18 +68,26 @@ h5 {
 footer {
   font-size: 22px;
   flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  margin-top: 80px;
 }
 
 #about,
-#portfolio,
-footer {
-  padding-left: 40px;
-  padding-right: 40px;
+#portfolio {
+  margin: 0 80px; 
+}
+
+#portfolio {
+  margin-top: 80px;
 }
 
 /* Navigation*/
+.navigation {
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+  width: 100%;
+  column-gap: 40px;
+}
 
 .logo {
   font-size: 30px;
@@ -87,7 +104,7 @@ footer {
 
 .linkactive {
   text-decoration: underline;
-    font-size: 20px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
@@ -106,7 +123,8 @@ footer {
 
 /* Button, Links */
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   cursor: pointer;
 }
 
@@ -127,6 +145,12 @@ button:hover, a:hover {
   font-size: 22px;
 }
 
+#mystory a {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
 .myphoto img {
   width: 100%;
 }
@@ -134,40 +158,34 @@ button:hover, a:hover {
 .myphoto {
   width: 30%;
   height: 30%;
-  /* flex: 1 0 400px;  */
-  margin-bottom: 40px;
 }
 
 /* Portfolio container */
 
-.container {
+.projects-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  /* column-gap: 45px; */
-  /* row-gap: 45px; */
-  justify-content: flex-start;
-  padding: 0;
-  width: 100%;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin: 0;
 }
 
 .portfolio {
-  border-bottom: var(--borderstyle);
-  padding-bottom: 40px;
-  padding-top: 40px;
-max-width: 45%;
-
+  border: var(--borderstyle);
+  padding: 40px;
+  /* padding-top: 40px; */
+  /* margin: 20px; */
+  max-width: 48%;
 }
 
-.portfolio:nth-child(odd){
+/* .portfolio:nth-child(odd){
   border-right: var(--borderstyle);
   padding-right: 40px;
 }
 
 .portfolio:nth-child(even){
   padding-left: 40px;
-}
-
+} */
 
 /* Portfolio Items */
 
@@ -305,6 +323,9 @@ label {
 footer {
   border-top: var(--borderstyle);
   padding-top: 3%;
+  padding: 0;
+  height: 100px;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
