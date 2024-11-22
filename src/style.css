@@ -22,6 +22,10 @@ footer {
   flex-wrap: wrap;
 }
 
+ul {
+margin: 0;
+}
+
 /* Typography */
 
 h2 {
@@ -93,6 +97,10 @@ align-items: center;
   font-size: 30px;
 }
 
+.container-fluid {
+/* align-items: center; */
+}
+
 .link {
   text-decoration: none;
   font-size: 20px;
@@ -158,6 +166,7 @@ a:hover {
 .myphoto {
   width: 30%;
   height: 30%;
+  align-self: center;
 }
 
 /* Portfolio container */
@@ -327,24 +336,86 @@ footer {
   .mydescription {
   flex: 1 1 50%;
 }
+ 
+.myphoto {
+    align-self: flex-end;
+  padding-bottom: 13%;
+}
+
+}
+
+@media screen and (max-width: 913px) {
+h2 {
+  font-size: 120px ;
+}
+
+.fa {
+  font-size: 50px;
+}
+
+  .portfolio{
+    max-width: 100%;
+  }
+
+  .mydescription {
+  flex: 1 1 50%;
+}
+
+  #about,
+#portfolio {
+  margin: 0 70px; 
+}
+
+#about {
+  column-gap: 35px;
+}
+
+.myphoto {
+  width: 35%;
+  align-self: flex-end;
+  padding-bottom: 17%;
+}
+
+} 
 
 /* #mystory {
   width: 50% !important;
-} */
+}
 
 .myphoto {
-  width: 40% !important;
+  width: 40%;
     align-self: flex-end;
     padding-bottom: 60px;
+} */
+
+@media screen and (max-width: 821px) {
+
+.myphoto {
+  width: 35%;
+  align-self: flex-end;
+  padding-bottom: 30%;
 }
 
+/* .fa {
+  font-size: 50px;
+} */
+
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
 
   h1 {
-    font-size: 20px;
+    font-size: 24px;
+    margin: 0;
+  }
+
+.fa {
+  font-size: 30px;
+}
+
+  .container-fluid {
+    padding:0;
   }
 
 
@@ -368,6 +439,9 @@ h3 {
     margin-top: 40px !important;
   }
 
+.navigation{
+  column-gap: 30px;
+}
 
   .portfolio {
     padding: 20px;
