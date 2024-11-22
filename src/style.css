@@ -6,7 +6,7 @@
 
 body {
   box-sizing: border-box;
-  margin: 0 !important;
+  margin: 0 ;
   padding: 0;
   max-width: 100% !important;
   overflow-x: hidden;
@@ -178,15 +178,6 @@ a:hover {
   max-width: 48%;
 }
 
-/* .portfolio:nth-child(odd){
-  border-right: var(--borderstyle);
-  padding-right: 40px;
-}
-
-.portfolio:nth-child(even){
-  padding-left: 40px;
-} */
-
 /* Portfolio Items */
 
 #portfolio > h2 {
@@ -202,7 +193,6 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 15px;
   line-height: 1.5;
-  padding-right: 20px;
 }
 
 .technology {
@@ -328,18 +318,60 @@ footer {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    max-width: 1400px;
-    margin: 0 auto;
+
+@media screen and (max-width: 1025px) {
+ .portfolio {
+    max-width: 47%;
   }
+
+  .mydescription {
+  flex: 1 1 50%;
 }
 
+/* #mystory {
+  width: 50% !important;
+} */
+
+.myphoto {
+  width: 40% !important;
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+}
+
+
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 80px;
+
+  h1 {
+    font-size: 20px;
   }
 
+
+  h2 {
+    font-size: 55px;
+  }
+
+h3 {
+  font-size: 24px;
+}
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .header {
+    margin-bottom: 40px ;
+  }
+
+  #portfolio {
+    margin-top: 40px !important;
+  }
+
+
+  .portfolio {
+    padding: 20px;
+  }
   .row,
   header,
   nav ul,
@@ -374,8 +406,35 @@ footer {
     padding-left: 0px;
   }
 
+  #about,
+#portfolio {
+  margin: 0 35px; 
+}
+
   #portfolio h2,
   footer h2 {
     text-align: center;
   }
+
+
+  #mystory {
+    font-size: 16px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .myphoto {
+    width: 100%;
+  }
+
+  .portfolio{
+    max-width: 100%;
+  }
+
+  .mydescription {
+  flex: 1 1 100%;
 }
+
+}
+
