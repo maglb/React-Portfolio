@@ -11,23 +11,23 @@ const currentPage = useLocation().pathname;
         <h1 id="logo">Magali Lebon</h1>
 
         <div
-          className="justify-content-end collapse navbar-collapse"
+          className="justify-content-end"
           id="navbarSupportedContent"
         >
           <Nav
             className="header"
             links={[
-              <Link
-                key={2}
-                className={
-                  currentPage === "/portfolio"
-                    ? "nav-link active linkactive"
-                    : "nav-link link"
-                }
-                to="/portfolio"
-              >
-                Portfolio
-              </Link>,
+              // <Link
+              //   key={2}
+              //   className={
+              //     currentPage === "/portfolio"
+              //       ? "nav-link active linkactive"
+              //       : "nav-link link"
+              //   }
+              //   to="/portfolio"
+              // >
+              //   Portfolio
+              // </Link>,
               <a
                 className="icon"
                 href="https://github.com/maglb"
