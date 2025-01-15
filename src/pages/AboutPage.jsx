@@ -1,5 +1,5 @@
 import "../style.css";
-import myPhoto from "../assets/myphoto.jpg";
+import myPhoto from "../assets/MagaliLebon_v8.jpg";
 
 export default function AboutPage() {
   return (
