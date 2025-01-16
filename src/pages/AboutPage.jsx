@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="mydescription">
         <h2>Hi,</h2>
         <p id="mystory">
-          Software Engineer who approaches code like a challenging climbing
+          I am a Software Engineer who approaches code like a challenging climbing
           route: breaking down complex problems into precise, methodical
           solutions. My background in{" "}
           <a href="https://magalilebon.squarespace.com/" target="_blank">
